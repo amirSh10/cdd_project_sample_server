@@ -36,7 +36,7 @@ router.post(`/addPerson`,(req,res)=>{
     }
     persons.push(person);
 
-    res.send(person)
+    res.send({list:person,error:true,message:"success"})
 })
 
 module.exports=router;
